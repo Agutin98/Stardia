@@ -1,0 +1,17 @@
+body{
+    background-image: url(../Imagenes/nebulosa.jpg);
+    text-align:center;
+}
+
+h1{
+    color:white;
+}
+
+p{
+    color:white;
+}
+
+a{
+    position: absolute;
+    left: 0%;
+}

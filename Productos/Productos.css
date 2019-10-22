@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../Imagenes/576058.jpg);
+    text-align:center;
+}
+
+h1{
+    color:white;
+}
+
+.card{
+    width: 18rem;
+    background-color: #011824;
+    color: white;
+}
+
+.volver{
+    position: absolute;
+    left: 0%;
+}
+
+.stardust{
+    background-color: rgba(100%, 100%, 100%, 0.2)
+}

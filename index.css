@@ -1,0 +1,29 @@
+body{
+    background-image: url(./Imagenes/576123.jpg);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 100%;
+    margin:0px;
+}
+
+h1{
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 3em;
+    color: rgba(100%, 100%, 100%, 1);
+    margin:0px;
+}
+
+div{
+    text-align: center;
+    padding: 30%;
+    background-color: rgba(100%, 100%, 100%, .1);
+}
+
+a{
+    font-size: 2.3em;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: rgba(100%, 100%, 100%, 1);
+}
