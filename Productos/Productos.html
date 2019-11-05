@@ -7,6 +7,14 @@
     <title>Productos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Productos.css">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+
 </head>
 <body>
 
@@ -71,7 +79,7 @@
             <div class="card-body">
               <h5 class="card-title">Marte</h5>
               <p class="card-text">Hasta el año 2020, nadie habia tenido el honor de pisar al gigante rojo, ahora, con Stardia, por un modico precio, puede hacerlo usted mismo.</p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" planetaid="planeta1">Comprar</button>
+              <button type="button" class="btn btn-primary boton" data-toggle="modal" data-target="#myModal" planetaid="Planeta1">Comprar</button>
             </div>
         </div>
 
@@ -81,7 +89,7 @@
             <div class="card-body">
               <h5 class="card-title">Tierra</h5>
               <p class="card-text">No hay nada mas acogedor que su propio hogar, por eso, en Stardia le ofrecemos volver a casa, al menor costo.</p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" planetaid="planeta2">Comprar</button>
+              <button type="button" class="btn btn-primary boton" data-toggle="modal" data-target="#myModal" planetaid="Planeta2">Comprar</button>
             </div>
         </div>
 
@@ -91,14 +99,12 @@
             <div class="card-body">
               <h5 class="card-title">La luna</h5>
               <p class="card-text">El principal destino de los Stardust, un lugar atractivo, barato y sobre todo, cerca de casa, la luna.</p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" planetaid="planeta3">
+              <button type="button" class="btn btn-primary boton" data-toggle="modal" data-target="#myModal" planetaid="Planeta3">
                 Comprar
               </button>
             </div>
         </div>
     </div>
-
-    <div class="faq">?</div>
 
     <!-- Modal -->
 <!-- The Modal -->
@@ -115,7 +121,7 @@
       <!-- Modal body -->
       <div class="modal-body row">
         <div class="col-xl-6"><img class="imagen" src=".."></div>
-        <div class="contenido col-xl-6">Aqui va una descripcion bien perrona del planeta que se quiere visitar.</div>
+        <div class="contenido col-xl-6">Aca va una descripcion del planeta que se quiere visitar.</div>
       </div>
 
       <!-- Modal footer -->
@@ -133,6 +139,13 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./Productos.js"></script>
+
+<!-- Javascript original
+  
+  <script src="./Productos.js"></script>-->
+
+
+  <!-- database Javascript-->
+<script src="Firebase.Js"></script>
 </body>
 </html>
