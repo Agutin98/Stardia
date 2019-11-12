@@ -39,3 +39,29 @@ database.ref("Alumnos/").on("value",function(datalist){
     }
     $("divacompletar").html(string) //reemplazo en HTML los datos por los valores devueltos de Firebase
 });
+
+
+
+//Clase 2 de Firebase //
+
+var db = firebase.database();
+var ref= db.ref("productos")
+
+//creacion de registro
+ref.push({nombre:"", precio: 10}) //Crea un registro en "ref" con el objeto que va dentro de llaves
+
+var registro = ref.push().key //crea un registro vacio con una key o id irrepetible 
+
+
+//modificacion de registros
+
+
+ref.child("key").update({nombre:"", precio: 10}) //tenemos acceso a cualquier elemento hijo de una ruta dentro de ("")
+//update es para actualizar los datos (solo lo que definamos adentro del objeto)
+
+ref.child("key").set({nombre:"", precio: 10}) //set sobreescribe la base de datos, borrando los demas datos.
+
+//update y set pueden trabajar sobre elementos inexistentes, si el registro no existe lo va a crear automaticamente
+
+ref.child("key").remove() //Elimina un registro de la base de datos
+
