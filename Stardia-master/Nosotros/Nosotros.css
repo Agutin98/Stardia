@@ -1,0 +1,21 @@
+*{
+    font-family: 'Tomorrow', sans-serif;
+    text-align:center;
+}
+
+body{
+    background-image: url(../Imagenes/nebulosa.jpg);
+}
+
+h1{
+    color:white;
+}
+
+p{
+    color:white;
+}
+
+#volver{
+    position: absolute;
+    left: 0%;
+}

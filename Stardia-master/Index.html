@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyArwWhMcV0lLCIYBqiMOsCKA8KX39mk5NA",
+        authDomain: "stardia-8d1c8.firebaseapp.com",
+        databaseURL: "https://stardia-8d1c8.firebaseio.com",
+        projectId: "stardia-8d1c8",
+        storageBucket: "stardia-8d1c8.appspot.com",
+        messagingSenderId: "691616855343",
+        appId: "1:691616855343:web:3baf08348819cbe4cd1dda",
+        measurementId: "G-725KGW9YTG"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+ 
+  </script>
+
+
+
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-light bg-dark">
+        <h1 class="col text-white">STARDIA</h1>
+    </nav>
+
+    <div class="container-fluid">
+        
+        <div class="row align-items-start" id="inicioSesion">
+            <div class="col-12"><h2>Viaje con nosotros</h2></div>
+            <div class="offset-2 col-8 offset-lg-4 col-lg-4 bg-dark" >
+                    <h3>Login</h3>
+                    <h4>E-mail</h4>
+                    <input id="emailLogin" type="email" placeholder="Ingrese su email" class="text-dark">
+                    <h4>Password</h4>
+                    <input id="passwordLogin" type="password" placeholder="Ingrese su contraseña" class="text-dark"><br>
+                    <button type="button" class="btn btn-danger" onclick="login()">Enviar</button>
+            </div>
+            <div class="offset-3 col-6 display-6"><br><h2>Ó</h2><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="Register">Registrarse</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6"><p>Para saber mas acerca de nosotros</p><a href="./Nosotros/Nosotros.html">PULSE AQUI</a></div>
+            <div class="col-12 col-sm-6"><p>Viaje con nosotros</p><a href="./Productos/Productos.html">CATALOGO DE VIAJES</a></div>
+        </div>
+    </div>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h3>Stardia</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <h3>Registrese</h3>
+            <h4>E-mail</h4>
+            <input id="emailRegistro" type="email" placeholder="Ingrese aqui su email" class="text-dark">
+            <h4>Nombre de usuario</h4>
+            <input type="text" name="usuario" id="userRegistro">
+            <h4>Password</h4>
+            <input id="passwordRegistro" type="password" name="" class="text-dark"><br>
+            <button type="button" class="btn btn-primary" onclick="registrar()">Registrarse</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Tomorrow', sans-serif;
+}
+
+body{
+    background-image: url(../Imagenes/576058.jpg);
+    text-align:center;
+}
+
+.card{
+    background-color: #011824;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.volver{
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+}
+
+.stardust{
+    background-color: rgba(100%, 100%, 100%, 0.2);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Esta wea es de la foto del carrusel*/
+@media (max-width: 576px){ 
+    .slidephoto{
+        height: 300px;
+    }
+}
+@media (max-width:990){
+    .slidephoto{
+        height: 450px;
+    }
+}
+@media (min-width: 991px){
+    .slidephoto{
+        height: 600px;
+    }
+}
+
+.carousel-item{
+    background-color: rgba(100%, 100%, 100%, 0.2);
+    height: 30%;
+}
+
+.foto{
+    width: 100%;
+    height: 70%;
+}
+.boton{
+    margin-bottom: 30px;
+}
+
+/* Estilo del modal */
+
+.imagen{
+    max-width: 100%;
+    max-height: 100%;
+}
+

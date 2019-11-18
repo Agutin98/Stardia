@@ -1,0 +1,30 @@
+*{
+text-align:center;
+color: white;
+font-family: 'Tomorrow', sans-serif;
+}
+
+body{
+    background-image: url(./Imagenes/576123.jpg);
+}
+
+p{
+    font-size: 30px;
+}
+
+a{
+    font-size: 50px;
+}
+
+#registrese{
+    float: left;
+    font-size: 20px;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.login{
+    padding: 10px;
+}
