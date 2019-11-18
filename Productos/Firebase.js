@@ -26,21 +26,32 @@ var descripcion = $(".contenido");
 var boton = $(".boton")
 
 
-//funcion del evento click
+//funcion del evento click (rellenar el modal con los datos de cada planeta)
 boton.click(function(){
 
-  var planetaid = $(this).attr("planetaid")
+  var planetaid = $(this).attr("planetaid");
 
   planetasRef.ref("Planetas/").on("value", function(datalist){
-    var datos = datalist.val()
-    var string = "";
+    var datos = datalist.val();
+    var titulo = "";
+    var descripcion = "";
+    var imagen = "";
     
     for (var i in datos){
-      console.log(datos[i].nombre);
-        string += '<h4 class="modal-title tituloModal">'+ datos[i].nombre +'</h4>'
+
+      if(datos[i].nombre == planetaid){
+        titulo += '<h4 class="modal-title tituloModal">'+ datos[i].nombre +'</h4>';
+        descripcion += '<div class="contenido col-xl-12">' + datos[i].descripcion + '</div>';
+        imagen += datos[i].imagen;
+      }
     }
-    $(".tituloModal").html(string);
+    $(".tituloModal").html(titulo);
+    $("#descripcion").html(descripcion);
+    $(".imagen").attr("src", imagen);
   })
 })
+// Fin de la funcion
+
+
 
 

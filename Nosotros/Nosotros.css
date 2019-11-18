@@ -1,6 +1,10 @@
+*{
+    font-family: 'Tomorrow', sans-serif;
+    text-align:center;
+}
+
 body{
     background-image: url(../Imagenes/nebulosa.jpg);
-    text-align:center;
 }
 
 h1{
@@ -11,7 +15,7 @@ p{
     color:white;
 }
 
-a{
+#volver{
     position: absolute;
     left: 0%;
 }
